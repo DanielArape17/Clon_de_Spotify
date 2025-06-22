@@ -6,8 +6,12 @@
   <title>Spotify</title>
   <link rel="stylesheet" href="./styles.css">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
-<body class="bg-black grid grid-rows-[80px_1fr_0] lg:grid-rows-[64px_1fr_64px] h-screen">
+<body class="bg-black grid grid-rows-[80px_1fr_0] lg:grid-rows-[64px_1fr_64px] h-screen text-[#fefefe]">
   <nav class="px-4 flex justify-between items-center">
     <!--Nav Izquierda-->
     <div class="flex items-center pl-2.5">
@@ -64,9 +68,36 @@
       <div class="bg-white p-[20px] flex lg:hidden"></div>
     </div>
   </nav>
-  <main class="bg-amber-950 grid grid-cols-[30%_70%] ">
-    <aside class="bg-emerald-950"></aside>
-    <div class="bg-linear-to-br from-[#222222] to-[#121212] overflow-y-auto"></div>
+  <main class="bg-amber-950 grid grid-cols-1 md:grid-cols-[25%_75%] ">
+    <aside class="hidden bg-emerald-950 md:flex"></aside>
+    <!--Canciones-->
+    <div class="bg-linear-to-br from-[#222222] to-[#121212] overflow-y-auto">
+      <!--Div-Canciones del momento-->
+      <div class="flex flex-col pl-10 py-7 gap-1.5">
+        <a href="">
+          <h2 class="text-2xl font-bold">Canciones del momento</h2>
+        </a>
+        <!--Carousel-->
+        <div class="flex gap-1 overflow-x-auto">
+          <!--Cancion-->
+          <a href="" class="group/cancion p-2.5 rounded-md hover:bg-[#1f1f1f]">
+            <div class="flex flex-col shrink-0 w-[154px] gap-1.5">
+              <div class="relative">
+                <img class="rounded-md shadow-xl/20" src="https://i.scdn.co/image/ab67616d00001e021f50fc82d780d1d935bbddd7" alt="Portada de la Canción">
+                <div class="opacity-0 bg-[#1ed760] rounded-full absolute bottom-2 right-2 p-3 group-hover/cancion:opacity-100 ">
+                  <svg height="24" width="24" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                </div>
+              </div>
+              <div>
+                <h3 class="font-medium">Gabriela</h3>
+                <p class="text-[#b3b3b3]">KATSEYE</p>
+              </div>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="hidden bg-sky-950 lg:flex"></footer>
 </body>
