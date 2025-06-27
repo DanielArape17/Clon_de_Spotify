@@ -70,10 +70,10 @@
   </nav>
   <main class="grid grid-cols-1 md:grid-cols-[25%_75%] px-2 pb-2 gap-2">
     <aside class="hidden bg-[#121212] md:flex flex-col rounded-md px-2.5 gap-6">
-      <div class="flex justify-between items-center p-3">
+      <div class="flex justify-between items-center py-3 pl-3 pr-0.5">
         <h2 class="font-bold">Tu biblioteca</h2>
-        <div>
-          <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" fill="#b3b3b3" height="16" width="16"><path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75"></path></svg>
+        <div class="group/biblioteca rounded-full p-2.5 hover:bg-[#1f1f1f] cursor-pointer">
+          <svg class="group-hover/biblioteca:fill-white" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" fill="#b3b3b3" height="16" width="16"><path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75"></path></svg>
         </div>
       </div>
       <div>
@@ -82,7 +82,7 @@
             <h3 class="font-bold">Crea tu primera playlist</h3>
             <p class="text-sm">¡Es muy fácil! Te vamos a ayudar</p>
           </div>
-          <button class="font-bold text-sm text-[#1f1f1f] bg-white px-4 py-1 rounded-full">Crear playlist</button>
+          <button class="font-bold text-sm text-[#1f1f1f] bg-white px-4 py-1.5 rounded-full cursor-pointer hover:scale-[1.03] hover:bg-stone-200">Crear playlist</button>
         </div>
       </div>
       <div class="flex flex-col gap-2.5 p-3">
@@ -96,8 +96,8 @@
         </div>
         <a href="" class="text-xs font-medium hover:underline decoration-1">Cookies</a>
       </div>
-      <div>
-        <button class="flex gap-1 items-center border border-[#b3b3b3] rounded-full font-bold text-sm py-1 px-3">
+      <div class="pl-3">
+        <button class="flex gap-1 items-center border border-[#b3b3b3] rounded-full font-bold text-sm py-1 px-3 cursor-pointer hover:scale-[1.03] hover:border-white">
           <svg fill="white" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"  height="16" width="16"><path d="M8.152 16H8a8 8 0 1 1 .152 0m-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296M4.877 7.25c.062-1.771.34-3.386.773-4.624q.148-.427.329-.806a6.51 6.51 0 0 0-4.436 5.43zm-3.334 1.5a6.51 6.51 0 0 0 4.436 5.43 8 8 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129zm5.048 0c-.061 1.771-.339 3.386-.772 4.624q-.123.353-.268.674a6.5 6.5 0 0 0 4.071-5.298zm3.031-1.5a6.51 6.51 0 0 0-4.071-5.298q.145.322.268.674c.433 1.238.711 2.853.772 4.624z"></path></svg>
           Español de Latinoamérica
         </button>
@@ -351,6 +351,17 @@
       </div>
     </div>
   </main>
-  <footer class="hidden bg-sky-950 lg:flex mx-2 mb-2"></footer>
+  <footer class="hidden bg-sky-950 lg:flex mx-2 mb-2">
+    <a href="" class="flex justify-between items-center w-full">
+      <div>
+        <p class="text-sm font-bold">Muestra de Spotify</p>
+        <p>
+          Regístrate para acceder a canciones y podcasts ilimitados con algunos anuncios. 
+          No necesitas tarjeta de crédito.
+        </p>
+      </div>
+      <button>Regístrate gratis</button>
+    </a>
+  </footer>
 </body>
 </html>
