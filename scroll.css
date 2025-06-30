@@ -1,4 +1,19 @@
-.overflow-x-auto::-webkit-scrollbar {
-  display: none;
+.overflow-y-auto::-webkit-scrollbar {
+  width: 12px;
 }
 
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+.overflow-y-auto:hover::-webkit-scrollbar-thumb {
+  background: #585858;
+}
+
+.overflow-x-auto::-webkit-scrollbar{
+  display: none;
+}
